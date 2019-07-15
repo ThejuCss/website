@@ -1,0 +1,197 @@
+.list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(247, 240, 240);
+  }
+  
+  .sublist {
+    float: left;
+  }
+  
+  .sublist a{
+    display: block;
+    color:#111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .sublist a:hover:not(.active) {
+    background-color: red;
+  }
+  .mycontent
+  {
+      margin-top:50px;
+      margin-left:150px;
+  }
+  .lorem
+  {
+    margin-top:20px;
+    margin-left:150px;
+    max-width:300px;
+    font-size:18px;
+
+  }
+  .contianner{
+      width:500px;
+      float:left;
+  }
+  .pricetable
+  {
+      width:500px;
+      float:right;
+      margin-top:40px;
+      margin-right:330px;
+  }
+  .create
+  {
+     border-radius:20px;
+     border: 1px solid black;
+     background-color:white;
+     padding:10px;
+     font-size:15px;
+     margin-left:150px;
+     top:-96px;
+     position: relative;
+  }
+  .signin
+  {
+     border-radius:20px;
+     border: 1px solid black;
+     background-color:white;
+     padding:20px;
+     font-size:15px;
+     margin-left:20px;
+     top:-96px;
+     position: relative;
+     line-height:2px;
+  }
+  .square{
+    width: 150px;
+    height: 150px;
+    opacity: 0.9;
+    position: relative;;                       
+    top: -110px;
+    left:-39px; 
+    margin-left:160px;
+    margin-top:250px;
+
+}
+.red{
+    background:grey;
+    z-index: 1;
+}
+.green{
+    background: grey;
+    z-index: 2;
+}
+
+tr:hover {
+  background-color: #ffa;
+}
+.Price,tr,td,th
+{
+ border:1px solid silver;
+ border-collapse:collapse;
+ width:840px;
+ height:50px;
+ margin-right:5px;
+ text-align:center;
+}
+table {
+  overflow: hidden;
+}
+
+tr:nth-child(odd) {
+  background: -webkit-linear-gradient(to left, #db36a4, #f7ff00); 
+}
+tr:hover {
+  background-color:whitesmoke;
+}
+
+td, th {
+  position: relative;
+}
+td:hover::after,th:hover::after {
+  content: "";
+  position: absolute;
+  background-color:whitesmoke;
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
+  box-shadow: 15px 0 15px -15px red;
+}
+.parent {
+    width: 50px;
+    height:50px;
+   margin-left:50px;
+}
+ 
+.shield {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    background-color: grey;
+    border-radius: 0 0 70% 70%;
+    display: inline-block;
+}
+.shield:before{
+    position: absolute;
+    margin-top: 50%;
+    content:"";
+    left: 50%;
+    top: 0;
+    width: 50%;
+    height: 50%;
+    background: grey;
+    border-radius: 70% 70% 0 0;
+    -webkit-transform: rotate(-61.5deg);
+    -webkit-transform-origin: 0 100%;
+   
+}
+.shelid:after {
+    background-color:grey;
+    left:10px;
+    -webkit-transform: rotate(61.5deg);
+    -webkit-transform-origin: 100% 100%;s
+}
+td.hideme {
+  border-left: 0;   
+}
+button.buy
+{
+  background-color:aqua;
+  width:100px;
+  height: 30px;
+}
+button:hover{
+  background-color: green;
+}
+.color
+{
+  border:1px solid black;
+  border-radius:5px;
+}
+.year{
+    background-color:grey;
+    font-size:10px;
+    width:50%;
+    float:left;
+}
+.month
+{
+    background-color:green;
+    font-size:10px;
+    width: 50%;
+    float:right;
+}
+.header{
+  margin-top:-10px;
+}
+.text{
+  font-size:6px;
+}
