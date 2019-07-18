@@ -1,0 +1,132 @@
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
+<script src="overlap.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="header">
+<div class="container">
+<div class="col">
+<p>my wish list</p>
+</div>
+<div class="col">
+<p>aveda gift guide</p>
+</div>
+<div class="col">
+<p>holiday gifting quiz</p>
+</div>
+<div class="col">
+<p>our pros' picks</p>
+</div>
+<div class="col">
+<p>create your own gift</p>
+</div>
+</div>
+</div>
+<div class="column">
+<div class="left">
+<img class="image1" src="pro_header.png" alt="salon pics">
+<div class="alignment"> Here's how out Global Artists get <p class="ex1" style=" top: 20px;">party-ready--and what they'll give</p> (and hope to get)this holiday.</div>
+<img class="cart" src="btn_pro_picks.png" alt="viewcart">
+</div>
+<div class="right">
+     <img class="fullimage" src="./pros.png" alt="authors" usemap="#image-map" >
+ 
+<map name="image-map">
+    <area id="TippiShorter" target="" alt="" title="" href="page1.html" coords="322,152,176,1" shape="rect">
+    <area id="Janel" target="" alt="" title="" href="" coords="1,1,153,153" shape="rect">
+    <area id="IanMichael" target="" alt="" title="" href="" coords="496,153,344,5" shape="rect">
+    <area id="Allen" target="" alt="" title="" href="" coords="153,323,4,174" shape="rect">
+    <area id="Ricardo" target="" alt="" title="" href="" coords="321,322,174,174" shape="rect">
+</map>
+  
+ 
+<img class="image3" src="gift.png" alt="giftspic">
+</div>
+</div>
+<div class="footer">
+<div class="container1">
+<div class="col1" id="janel">
+<p class="aname">Janell Geason </p>
+<p class="desgn"><i>Artistic Director,Makeup</i></p>
+</div>
+<div class="col1" id="tippishorter">
+<p class="aname">Tippi Shorter</p>
+<p class="desgn"><i>Artistic Director,Textured Hair</i></p>
+</div>
+<div class="col1" id="ianmichael">
+<p class="aname">Ian Michael Black</p>
+<p class="desgn"><i>Artistic Director,Hair Color</i></p>
+</div>
+<div class="col1" id="allen">
+<p class="aname">Allen Ruiz</p>
+<p class="desgn"><i>Artistic Director,Hair Styling</i></p>
+</div>
+<div class="col1" id="ricardo">
+<p class="aname">Ricardo Dinis </p>
+<p class="desgn"><i>Artistic Director,Hair Cutting</i></p>
+</div>
+</div>
+</div>
+
+
+
+
+
+</body></html>
+
+js code:
+$(document).ready(function(){
+
+$('#Janel').mouseover(function(){
+var flag=0;
+if(flag==0)
+{
+$('.fullimage').attr("src",'./pro_1.png');
+$('#janel--tab').css("border-top",'8px solid #C8122B');
+}
+});
+
+$('#TippiShorter').mouseover(function(){
+var flag=0;
+if(flag==0)
+{
+$('.fullimage').attr("src",'./pro_2.png');
+$('#tippishorter--tab').css("border-top",'8px solid #C8122B');
+}
+});
+$('#IanMichael').mouseover(function(){
+var flag=0;
+if(flag==0)
+{
+$('.fullimage').attr("src",'./pro_3.png');
+$('#ianmichael').css("border-top",'8px solid #C8122B');
+}
+});
+$('#Allen').mouseover(function(){
+var flag=0;
+if(flag==0)
+{
+$('.fullimage').attr("src",'./pro_4.png');
+$('#allen').css("border-top",'8px solid #C8122B');
+}
+});
+$('#Ricardo').mouseover(function(){
+var flag=0;
+if(flag==0)
+{
+$('.fullimage').attr("src",'./pro_5.png');
+$('#ricardo').css("border-top",'8px solid #C8122B');
+}
+});
+$('#Janel,#TippiShorter,#IanMichael,#Allen,#Ricardo').mouseout(function() {
+$('.').css("border-top",'none');
+$('.fullimage').attr("src",'./pros.png');
+});
+
+});
+
+
